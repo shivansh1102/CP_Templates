@@ -30,7 +30,7 @@ void sieve()
         {
             for(lli j = i*i; j <= MAXA; j += i)
             {
-                isPrime[j] = true;
+                isPrime[j] = false;
                 if(spf[j] == j)
                 spf[j] = i;
             }
